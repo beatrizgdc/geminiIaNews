@@ -1,257 +1,239 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o preenchimento padrão de todos os elementos */
   box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
 }
 
 /* Estilo Geral do Body */
 body {
-  font-family: 'Noto Sans', sans-serif;
-  width: 100%;
-  height: 100%;
+  font-family: 'Noto Sans', sans-serif; /* Define a fonte padrão para o corpo da página */
+  width: 100%; /* Largura total da página */
+  height: 100%; /* Altura total da página */
   overflow-x: hidden; /* Evita rolagem horizontal indesejada */
   background-color: #fff; /* Cor de fundo leve para melhor visualização */
 }
 
 /* Centralização do Conteúdo */
 .centralizar {
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1200px; /* Define a largura máxima do conteúdo centralizado */
+  width: 100%; /* Largura total do conteúdo centralizado */
   margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 /* Estilo do Cabeçalho */
 header {
-  max-width: 100%;
-  width: 100%;
-  height: auto; /* Altura do cabeçalho */
+  max-width: 100%; /* Largura máxima do cabeçalho */
+  width: 100%; /* Largura total do cabeçalho */
+  height: auto; /* Altura automática do cabeçalho */
   background-color: #ffffff; /* Cor de fundo do cabeçalho */
-  color: #fff; /* Cor do texto */
-  display: flex;
-  flex-direction: column;
+  color: #fff; /* Cor do texto do cabeçalho */
+  display: flex; /* Define o layout flexível para o cabeçalho */
+  flex-direction: column; /* Alinha os itens do cabeçalho em coluna */
   justify-content: center; /* Alinha horizontalmente ao centro */
   align-items: center; /* Alinha verticalmente ao centro */
-  gap: 15px;
-  border-bottom: 1px solid #8a8a8a86;
-  position: fixed;
+  gap: 15px; /* Espaçamento entre os itens do cabeçalho */
+  border-bottom: 1px solid #8a8a8a86; /* Linha de borda sutil na parte inferior */
+  position: fixed; /* Fixa o cabeçalho no topo da página */
 }
 
 .container_principal {
-  max-width: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  height: 55px;
+  max-width: 100%; /* Largura máxima do contêiner principal */
+  width: 100%; /* Largura total do contêiner principal */
+  display: flex; /* Define o layout flexível para o contêiner principal */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Alinha verticalmente ao centro */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  height: 55px; /* Altura do contêiner principal */
   padding: 10px 30px 0 30px; /* Adiciona algum preenchimento lateral */
 }
 
 .menu-and-logo-search{
-  display: flex;
-  gap: 15px;
-  align-items: center;
+  display: flex; /* Define o layout flexível para o menu, logo e busca */
+  gap: 15px; /* Espaçamento entre o menu, logo e busca */
+  align-items: center; /* Alinha verticalmente ao centro */
 }
 
 .container_principal svg{
-  width: 30px;
-  fill: #979797;
+  width: 30px; /* Largura dos ícones SVG */
+  fill: #979797; /* Cor de preenchimento dos ícones SVG */
 }
 
 .logo img {
-  height: 60px;
-  margin-top: 8px;
+  height: 60px; /* Altura da imagem do logo */
+  margin-top: 8px; /* Margem superior da imagem do logo */
 }
 
 .talkGemini img{
- height: 40px;
+ height: 40px; /* Altura da imagem do talkGemini */
 }
 
-/* Estilo do Navegação */
+/* Estilo da Navegação */
 .container_sub{
-  height: 50px ;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(90deg, #076eff 50%, #4fabff, #ac87eb, #ee4d5d);
+  height: 50px; /* Altura da barra de navegação */
+  width: 100%; /* Largura total da barra de navegação */
+  display: flex; /* Define o layout flexível para a barra de navegação */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Alinha verticalmente ao centro */
+  background: linear-gradient(90deg, #076eff 50%, #4fabff, #ac87eb, #ee4d5d); /* Gradiente de fundo da barra de navegação */
   padding: 0px 30px 0 30px; /* Adiciona algum preenchimento lateral */
 }
 
 nav{
-  height: 100%;
+  height: 100%; /* Altura total do elemento de navegação */
 }
 
 /* Estilo dos Itens de Navegação */
 nav > ul {
-  height: 100%;
-  list-style-type: none;
+  height: 100%; /* Altura total da lista de navegação */
+  list-style-type: none; /* Remove os marcadores da lista */
   display: flex; /* Exibe os itens de navegação em linha */
-  gap: 15px; /* Espaçamento entre os itens */
+  gap: 15px; /* Espaçamento entre os itens de navegação */
 }
 
 nav > ul > li {
-  height: 100%;
+  height: 100%; /* Altura total dos itens da lista */
   position: relative; /* Necessário para posicionar o submenu */
-  border-bottom: 2px solid #53a6ff00; 
+  border-bottom: 2px solid #53a6ff00; /* Linha de borda sutil na parte inferior dos itens */
 }
 
 nav > ul > li > a {
-  height: 100%;
-  text-decoration: none; /* Remove sublinhado */
-  color: #ffffffb3; /* Cor do texto */
-  font-size: 14px; /* Tamanho da fonte */
-  font-weight: 600;
-  padding: 10px 15px; /* Padding interno */
+  height: 100%; /* Altura total do link de navegação */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #ffffffb3; /* Cor do texto dos links */
+  font-size: 14px; /* Tamanho da fonte dos links */
+  font-weight: 600; /* Peso da fonte dos links */
+  padding: 10px 15px; /* Padding interno dos links */
   display: flex; /* Faz o link ocupar o bloco inteiro */
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
   transition: color 0.3s ease; /* Transição suave para a cor do texto */
 }
 
 nav > ul > li:hover, nav > ul > li.active {
-  border-bottom: 2px solid #fff; /* Cor do texto ao passar o mouse ou ao focar */
+  border-bottom: 2px solid #fff; /* Linha de borda branca ao passar o mouse ou ao focar no item */
 }
 
 nav > ul > li:hover > a, nav > ul > li.active > a {
-  color: #fff; /* Cor do texto ao passar o mouse ou ao focar */
+  color: #fff; /* Cor do texto ao passar o mouse ou ao focar no item */
 }
 
 /* HOME */
-
 .folder{
-  width: 100%;
-  height: 100vh;
-  background-image: url(../imagens/Banner\ para\ loja\ de\ eletrônicos\ smartwatch\ desconto\ preto\ e\ vermelho.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%; /* Largura total da seção */
+  height: 100vh; /* Altura total da viewport */
+  background-image: url(../imagens/bannerhome.jpg); /* Imagem de fundo */
+  background-position: center; /* Posiciona a imagem de fundo no centro */
+  background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+  background-size: cover; /* Faz a imagem de fundo cobrir todo o elemento */
 }
 
 .folder .centralizar{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 100px 0 0 0;
+  height: 100%; /* Altura total do contêiner centralizado dentro da .folder */
+  display: flex; /* Define o layout flexível para o contêiner */
+  flex-direction: column; /* Alinha os itens em coluna */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: flex-start; /* Alinha verticalmente ao topo */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 100px 0 0 0; /* Adiciona algum preenchimento superior */
 }
 
 .folder h1{
-  font-size: 110px;
-  font-weight: 600;
-  color: #3c4043;
+  font-size: 110px; /* Tamanho da fonte do título */
+  font-weight: 600; /* Peso da fonte do título */
+  color: #3c4043; /* Cor do texto do título */
 }
 
 .folder h3{
-  font-size: 22px;
-  font-weight: 400;
-  color: #333;
-  margin: 50px 0 100px 0;
-  text-align: left;
+  font-size: 22px; /* Tamanho da fonte do subtítulo */
+  font-weight: 400; /* Peso da fonte do subtítulo */
+  color: #333; /* Cor do texto do subtítulo */
+  margin: 50px 0 100px 0; /* Margens superior e inferior do subtítulo */
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 .paragrafo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 70px 0 70px 0;
+  display: flex; /* Define o layout flexível para o contêiner de parágrafos */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  padding: 70px 0 70px 0; /* Adiciona algum preenchimento superior e inferior */
 }
 
 .paragrafo-container img {
-  width: 400px; /* Ajuste o tamanho conforme necessário */
-  height: auto;
-  margin: 0 15px;
+  width: 400px; /* Largura das imagens dentro do contêiner */
+  height: auto; /* Altura automática das imagens */
+  margin: 0 15px; /* Margens laterais das imagens */
 }
 
 .left {
-  flex-direction: row;
+  flex-direction: row; /* Alinha os itens em linha (horizontal) */
 }
 
 .right {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; /* Alinha os itens em linha (horizontal) na ordem reversa */
 }
 
 .left p{
-  padding-left: 50px;
+  padding-left: 50px; /* Adiciona preenchimento à esquerda dos parágrafos na classe .left */
 }
 
 .paragrafo-container p {
-  max-width: 700px; /* Ajuste o tamanho conforme necessário */
-  line-height: 2rem;
-  font-size: 22px;
-
-}
-
-.linha-final{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.linha-final a{
-  color: #076eff;
-  transition: .2s;
-}
-
-.linha-final a:hover{
-  color: #4fabff;
+  max-width: 700px; /* Largura máxima dos parágrafos */
+  line-height: 2rem; /* Altura da linha dos parágrafos */
+  font-size: 22px; /* Tamanho da fonte dos parágrafos */
 }
 
 /* Estilos gerais do footer */
 footer {
-  background-color: #f1f1f1; /* Cor de fundo suave */
-  padding: 100px 0;
-  font-family: Arial, sans-serif;
-  color: #333; /* Cor de texto suave */
+  background-color: #f1f1f1; /* Cor de fundo suave do footer */
+  padding: 100px 0; /* Adiciona algum preenchimento superior e inferior */
+  font-family: Arial, sans-serif; /* Define a fonte do texto do footer */
+  color: #333; /* Cor do texto do footer */
 }
 
 footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: 1200px; /* Largura máxima do contêiner do footer */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 0 15px; /* Adiciona algum preenchimento lateral */
 }
 
 /* Estilização dos links adicionais */
 footer .footer-links {
-  margin-top: 30px;
-  text-align: center;
-  border-top: 1px solid #979797;
-  display: flex;
-  align-items: center;
-  padding: 20px 0 20px 0;
+  margin-top: 30px; /* Margem superior dos links adicionais */
+  text-align: center; /* Alinha o texto ao centro */
+  border-top: 1px solid #979797; /* Linha de borda sutil na parte superior */
+  display: flex; /* Define o layout flexível para os links adicionais */
+  align-items: center; /* Alinha verticalmente ao centro */
+  padding: 20px 0 20px 0; /* Adiciona algum preenchimento superior e inferior */
 }
 
 footer .footer-links a {
-  display: inline-block;
-  color: #555;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 14px;
+  display: inline-block; /* Exibe os links como blocos em linha */
+  color: #555; /* Cor dos links adicionais */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  margin: 0 10px; /* Margens laterais dos links adicionais */
+  font-size: 14px; /* Tamanho da fonte dos links adicionais */
 }
 
 footer .footer-links a:hover {
-  color: #007bff; /* Cor de hover suave */
+  color: #007bff; /* Cor dos links adicionais ao passar o mouse */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   footer .row {
-      flex-direction: column;
+      flex-direction: column; /* Alinha os itens do footer em coluna em telas pequenas */
   }
 
   footer .col-md-4 {
-      margin-bottom: 20px;
+      margin-bottom: 20px; /* Margem inferior das colunas no footer em telas pequenas */
   }
 
   footer .footer-links {
-      text-align: center;
+      text-align: center; /* Alinha o texto ao centro nos links adicionais em telas pequenas */
   }
 
   footer .footer-links a {
-      display: block;
-      margin-bottom: 10px;
+      display: block; /* Exibe os links adicionais como blocos em telas pequenas */
+      margin-bottom: 10px; /* Margem inferior dos links adicionais em telas pequenas */
   }
 }
