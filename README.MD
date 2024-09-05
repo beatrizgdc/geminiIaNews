@@ -13,6 +13,10 @@ O objetivo deste projeto é criar um site que introduza a Inteligência Artifici
 - **Exemplos Práticos:** Exemplos simples de como aplicar a engenharia de prompt em situações do cotidiano.
 - **Interatividade:** Recursos interativos que permitem aos usuários experimentar e entender melhor os conceitos apresentados.
 
+## Acessar o site
+
+[Acessar o site aqui](file:///C:/Users/Catnip/dev/geminiIaNews/index.html)
+
 ## Clonando o Repositório
 
 Para começar, você precisa clonar este repositório para o seu computador. Siga os passos abaixo:

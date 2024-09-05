@@ -219,22 +219,84 @@ footer .footer-links a:hover {
   color: #007bff; /* Cor dos links adicionais ao passar o mouse */
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  footer .row {
-      flex-direction: column; /* Alinha os itens do footer em coluna em telas pequenas */
+
+
+
+/* Responsividade para dispositivos menores */
+
+
+@media (max-width: 500px) {
+  .centralizar{
+    padding: 0 20px;
   }
 
-  footer .col-md-4 {
-      margin-bottom: 20px; /* Margem inferior das colunas no footer em telas pequenas */
+  header{
+    width: 100vw;
+    gap: 0;
+  }
+
+  .container_principal {
+    width: 100%;
+    height: auto; /* Ajusta a altura para dispositivos pequenos */
+    padding: 0 20px;
+  }
+
+  .menu-and-logo-search {
+    gap: 5px; /* Espaçamento reduzido */
+  }
+
+  .container_sub {
+    display: none;
+  }
+
+  .folder{
+    background-image: url(../imagens/bannermobile.png);
+  }
+
+  .folder .centralizar {
+    padding: 0px 20px; /* Reduzido para dispositivos pequenos */
+  }
+
+  .folder h1 {
+    font-size: 48px; /* Reduzido para melhor ajuste em telas pequenas */
+  }
+
+  .folder h3 {
+    font-size: 16px; /* Reduzido para melhor ajuste em telas pequenas */
+    margin: 20px 0 40px 0; /* Ajustado para menor espaçamento em telas pequenas */
+  }
+
+  .paragrafo-container {
+    flex-direction: column; /* Alinha itens verticalmente em dispositivos pequenos */
+    gap: 20px; /* Espaçamento reduzido */
+    padding: 20px 0; /* Padding ajustado */
+  }
+
+  .paragrafo-container img {
+    display: none;
+  }
+
+  .left, .right {
+    flex-direction: column; /* Alinha os itens em coluna em dispositivos pequenos */
+  }
+
+  .left p {
+    padding-left: 0; /* Remove o padding à esquerda */
+    padding-top: 10px; /* Adiciona padding superior para separação */
+  }
+
+  .paragrafo-container p {
+    font-size: 16px; /* Tamanho da fonte reduzido */
+    max-width: 100%; /* Largura máxima ajustada para dispositivos pequenos */
+  }
+
+  footer{
+    padding: 60px 0;
   }
 
   footer .footer-links {
-      text-align: center; /* Alinha o texto ao centro nos links adicionais em telas pequenas */
+    flex-direction: column;
+    gap: 10px;
   }
 
-  footer .footer-links a {
-      display: block; /* Exibe os links adicionais como blocos em telas pequenas */
-      margin-bottom: 10px; /* Margem inferior dos links adicionais em telas pequenas */
-  }
 }
