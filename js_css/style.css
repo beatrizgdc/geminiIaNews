@@ -1,1 +1,265 @@
-.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+/* Estilo Geral do Body */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+  background-color: #fff; /* Cor de fundo leve para melhor visualização */
+}
+
+/* Centralização do Conteúdo */
+.centralizar {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo do Cabeçalho */
+header {
+  max-width: 100%;
+  width: 100%;
+  height: auto; /* Altura do cabeçalho */
+  background-color: #ffffff; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+  gap: 15px;
+  border-bottom: 1px solid #8a8a8a86;
+  position: fixed;
+}
+
+.container_principal {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 55px;
+  padding: 10px 30px 0 30px; /* Adiciona algum preenchimento lateral */
+}
+
+.menu-and-logo-search{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.container_principal svg{
+  width: 30px;
+  fill: #979797;
+}
+
+.logo img {
+  height: 60px;
+  margin-top: 8px;
+}
+
+.talkGemini img{
+ height: 40px;
+}
+
+/* Estilo do Navegação */
+.container_sub{
+  height: 50px ;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #076eff 50%, #4fabff, #ac87eb, #ee4d5d);
+  padding: 0px 30px 0 30px; /* Adiciona algum preenchimento lateral */
+}
+
+nav{
+  height: 100%;
+}
+
+/* Estilo dos Itens de Navegação */
+nav > ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex; /* Exibe os itens de navegação em linha */
+  gap: 15px; /* Espaçamento entre os itens */
+}
+
+nav > ul > li {
+  height: 100%;
+  position: relative; /* Necessário para posicionar o submenu */
+  border-bottom: 2px solid #53a6ff00; 
+}
+
+nav > ul > li > a {
+  height: 100%;
+  text-decoration: none; /* Remove sublinhado */
+  color: #ffffffb3; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: 600;
+  padding: 10px 15px; /* Padding interno */
+  display: flex; /* Faz o link ocupar o bloco inteiro */
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+nav > ul > li:hover, nav > ul > li.active {
+  border-bottom: 2px solid #fff; /* Cor do texto ao passar o mouse ou ao focar */
+}
+
+nav > ul > li:hover > a, nav > ul > li.active > a {
+  color: #fff; /* Cor do texto ao passar o mouse ou ao focar */
+}
+
+/* HOME */
+
+.folder{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagens/Banner\ para\ loja\ de\ eletrônicos\ smartwatch\ desconto\ preto\ e\ vermelho.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.folder .centralizar{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 100px 0 0 0;
+}
+
+.folder h1{
+  font-size: 110px;
+  font-weight: 600;
+  color: #3c4043;
+}
+
+.folder h3{
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  margin: 50px 0 100px 0;
+  text-align: left;
+}
+
+.paragrafo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0 70px 0;
+}
+
+.paragrafo-container img {
+  width: 400px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin: 0 15px;
+}
+
+.left {
+  flex-direction: row;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.left p{
+  padding-left: 50px;
+}
+
+.paragrafo-container p {
+  max-width: 700px; /* Ajuste o tamanho conforme necessário */
+  line-height: 2rem;
+  font-size: 22px;
+
+}
+
+.linha-final{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linha-final a{
+  color: #076eff;
+  transition: .2s;
+}
+
+.linha-final a:hover{
+  color: #4fabff;
+}
+
+/* Estilos gerais do footer */
+footer {
+  background-color: #f1f1f1; /* Cor de fundo suave */
+  padding: 100px 0;
+  font-family: Arial, sans-serif;
+  color: #333; /* Cor de texto suave */
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilização dos links adicionais */
+footer .footer-links {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #979797;
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.logo-google-footer{
+  width: 100px;
+  background-image: url(../imagens/logo_footer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .footer-links a {
+  display: inline-block;
+  color: #555;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+footer .footer-links a:hover {
+  color: #007bff; /* Cor de hover suave */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  footer .row {
+      flex-direction: column;
+  }
+
+  footer .col-md-4 {
+      margin-bottom: 20px;
+  }
+
+  footer .footer-links {
+      text-align: center;
+  }
+
+  footer .footer-links a {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
