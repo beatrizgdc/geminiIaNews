@@ -224,14 +224,6 @@ footer .footer-links {
   padding: 20px 0 20px 0;
 }
 
-.logo-google-footer{
-  width: 100px;
-  background-image: url(../imagens/logo_footer.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 footer .footer-links a {
   display: inline-block;
   color: #555;
