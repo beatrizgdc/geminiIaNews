@@ -67,6 +67,106 @@ header {
  height: 40px; /* Altura da imagem do talkGemini */
 }
 
+/* Overlay de fundo escurecido */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Menor que o menu, para que fique atrás */
+}
+
+/* Overlay de fundo escurecido */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Menor que o menu, para que fique atrás */
+}
+
+/* Estilos para o menu móvel */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff; /* Fundo branco para o menu */
+  color: #333; /* Texto cinza */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Maior que o overlay, para que fique em cima */
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+/* Estilos para o menu de navegação */
+.mobile-menu nav {
+  flex: 1;
+}
+
+.mobile-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.mobile-menu nav ul li {
+  border: none;
+  height: auto;
+}
+
+.mobile-menu nav ul li.active a{
+  color: #007bff;
+}
+
+.mobile-menu nav ul li.active{
+  border: none;
+}
+
+.mobile-menu nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333; /* Texto cinza */
+  background-color: #ffffff; /* Fundo branco para itens do menu */
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+  border: none;
+}
+
+/* Estilos para o botão de fechar o menu */
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333; /* Cor do ícone de fechar */
+  cursor: pointer;
+  padding: 10px;
+  align-self: flex-end;
+}
+
+/* Botão do menu */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* Estilo da Navegação */
 .container_sub{
   height: 50px; /* Altura da barra de navegação */
@@ -242,7 +342,13 @@ footer .footer-links a:hover {
   }
 
   .menu-and-logo-search {
-    gap: 5px; /* Espaçamento reduzido */
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo{
+    display: none;
   }
 
   .container_sub {
