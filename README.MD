@@ -84,15 +84,6 @@ Para uma melhor simulação de ambiente de produção, você pode usar um servid
 
    Isso abrirá o site no seu navegador padrão e atualizará automaticamente qualquer mudança que você faça no código.
 
-## Estrutura do Projeto
-
-Aqui está uma breve descrição dos arquivos e diretórios incluídos no repositório:
-
-- `index.html`: O arquivo principal HTML do site.
-- `style.css`: Arquivo de estilos CSS para o site.
-- `script.js`: Arquivo JavaScript para funcionalidades interativas.
-- `assets/`: Pasta que contém imagens e outros recursos estáticos.
-
 ## Contato
 
 Se você tiver alguma dúvida ou precisar de mais informações, sinta-se à vontade para entrar em contato:
