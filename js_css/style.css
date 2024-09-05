@@ -48,7 +48,9 @@ header {
 }
 
 .menu-and-logo-search{
+  width: 100%;
   display: flex; /* Define o layout flexível para o menu, logo e busca */
+  justify-content: space-between;
   gap: 15px; /* Espaçamento entre o menu, logo e busca */
   align-items: center; /* Alinha verticalmente ao centro */
 }
@@ -162,6 +164,7 @@ header {
 
 /* Botão do menu */
 .menu-toggle {
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -339,6 +342,10 @@ footer .footer-links a:hover {
     width: 100%;
     height: auto; /* Ajusta a altura para dispositivos pequenos */
     padding: 0 20px;
+  }
+
+  .menu-toggle{
+    display: block;
   }
 
   .menu-and-logo-search {
