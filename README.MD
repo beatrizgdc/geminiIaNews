@@ -15,7 +15,7 @@ O objetivo deste projeto é criar um site que introduza a Inteligência Artifici
 
 ## Acessar o site
 
-Acessar o site [aqui](file:///C:/Users/Catnip/dev/geminiIaNews/index.html)
+Acessar o site [aqui](https://beatrizgdc.github.io/geminiIaNews/)
 
 ## Clonando o Repositório
 
