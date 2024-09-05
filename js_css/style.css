@@ -155,11 +155,12 @@ nav > ul > li:hover > a, nav > ul > li.active > a {
   display: flex; /* Define o layout flexível para o contêiner de parágrafos */
   align-items: center; /* Alinha verticalmente ao centro */
   justify-content: center; /* Alinha horizontalmente ao centro */
+  gap: 50px;
   padding: 70px 0 70px 0; /* Adiciona algum preenchimento superior e inferior */
 }
 
 .paragrafo-container img {
-  width: 400px; /* Largura das imagens dentro do contêiner */
+  width: 370px; /* Largura das imagens dentro do contêiner */
   height: auto; /* Altura automática das imagens */
   margin: 0 15px; /* Margens laterais das imagens */
 }
